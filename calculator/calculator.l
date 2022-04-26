@@ -9,6 +9,7 @@
     #define TK_MULT 3;
     #define TK_DIV 4;
     #define TK_NUMBER 5;
+    extern int yylval;
 %}
 
 
@@ -17,5 +18,6 @@
 "-" {return TK_MINUS;}
 "/" {return TK_DIV;}
 "*" {return TK_MULT;}
+[0-9] {return num}
 
 %%
