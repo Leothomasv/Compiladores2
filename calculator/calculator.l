@@ -3,12 +3,14 @@
 %option caseless
 
 %{
-    #include "main.cpp"
-    #define TK_PLUS 1;
-    #define TK_MINUS 2;
-    #define TK_MULT 3;
-    #define TK_DIV 4;
-    #define TK_NUMBER 5;
+    enum yytokentype{
+        TK_PLUS = 258, 
+        TK_MINUS = 259,
+        TK_MULT = 260, 
+        TK_NUMBER = 261,
+        TK_DIV = 262,
+        TK_EOL = 263
+    };
     extern int yylval;
 %}
 
@@ -18,6 +20,9 @@
 "-" {return TK_MINUS;}
 "/" {return TK_DIV;}
 "*" {return TK_MULT;}
-[0-9] {return num}
+[0-9]+ {yylval = atoi(yytext); return TK_NUM;}
+\n {return TK_EOL;}
+\t {/*ignore*/}
+. {printf("Invalid character %c\n");}
 
 %%
