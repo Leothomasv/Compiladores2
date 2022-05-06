@@ -1,4 +1,4 @@
-TARGET=minic
+TARGET=sql
 all: ${TARGET}
 
 ${TARGET}: ${TARGET}_parser.o ${TARGET}_lexer.o main.o

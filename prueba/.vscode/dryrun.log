@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/leito/Compiladores1_Clase/prueba'
+bison --defines=tokens.h -o sql_parser.cpp sql.y
+g++ --std=c++11 -g -c -o sql_parser.o sql_parser.cpp
+flex -o sql_lexer.cpp sql.l
+g++ --std=c++11 -g -c -o sql_lexer.o sql_lexer.cpp
+g++ --std=c++11 -g -c -o main.o main.cpp
+g++ --std=c++11 -g -o sql sql_parser.o sql_lexer.o main.o
+make: Leaving directory '/home/leito/Compiladores1_Clase/prueba'
+ 

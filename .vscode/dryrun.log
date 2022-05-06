@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/leito/Compiladores1_Clase'
+make: Leaving directory '/home/leito/Compiladores1_Clase'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
