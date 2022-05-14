@@ -1,0 +1,10 @@
+%option yylineno
+%option noyywrap
+
+%{
+
+%}
+
+%%
+
+%%

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May  5 14:55:40 2022
+# Make data base, printed on Tue May 10 18:37:40 2022
 
 # Variables
 
@@ -15,7 +15,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -35,7 +35,7 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code/bin/code
+_ = /home/leito/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/node
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -51,13 +51,11 @@ VSCODE_CWD = /mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/leito/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Users/leoth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/leoth/AppData/Roaming/npm:/mnt/c/Users/leoth/.dotnet/tools:/snap/bin
+PATH = /home/leito/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Users/leoth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/leoth/AppData/Roaming/npm:/mnt/c/Users/leoth/.dotnet/tools:/snap/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-865b2fdb-475d-4578-ac63-f4d3cf43c2f3.sock
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/leoth/AppData/Local/Temp/vscode-remote-wsl/57fd6d0195bb9b9d1b49f6da5db789060795de47/vscode-server-stable-linux-x64.tar.gz
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-aa982953-87cd-4567-9b51-1be5ed2127aa.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,7 +69,7 @@ PWD = /home/leito/Compiladores1_Clase/prueba
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/9_interop
+WSL_INTEROP = /run/WSL/12_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -81,7 +79,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = leito
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -93,7 +91,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 0
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -101,7 +99,7 @@ USER = leito
 # makefile
 .DEFAULT_GOAL := all
 # environment
-NAME = Code
+NAME = DESKTOP-H2JC1BI
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -151,7 +149,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=4/110=4%
+# Load=69/1024=7%, Rehash=0, Collisions=4/109=4%
 
 # Pattern-specific Variable Values
 
@@ -159,9 +157,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 54743): 7 files, no impossibilities.
+# . (device 2064, inode 54743): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -211,7 +209,7 @@ sql: sql_parser.o sql_lexer.o main.o
 # Not a target:
 sql.y:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-05 00:23:14.730051
+#  Last modified 2022-05-05 17:49:39.8800348
 #  File has been updated.
 #  Successfully updated.
 
@@ -276,8 +274,8 @@ main.o: main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 8):
+ 
 	g++ --std=c++11 -g -c -o $@ $<
 
 # Not a target:
@@ -304,12 +302,12 @@ sql_parser.o: sql_parser.cpp
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 169 B / avg = 8 B
-# current buf: size = 8162 B / used = 169 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 193 B / avg = 9 B
+# current buf: size = 8162 B / used = 193 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 42 / hit rate = 54%
+# strcache performance: lookups = 44 / hit rate = 52%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=4/42=10%
-# Finished Make data base on Thu May  5 14:55:40 2022
+# Load=21/8192=0%, Rehash=0, Collisions=4/44=9%
+# Finished Make data base on Tue May 10 18:37:40 2022
 
  
