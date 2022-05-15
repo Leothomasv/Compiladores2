@@ -2,7 +2,7 @@
 
 using namespace std;
 extern FILE * yyin;
-int yylval;
+extern  char* yylval;
 extern int yylineno;
 
 int yylex();
@@ -19,18 +19,12 @@ int main(int argc, char*argv[]){
     {
         fprintf(stderr, "Cou");
     }
-    
 
     yyin = f;
     int token;
     while ((token = yylex()))
     {
-        printf("Line %d Token type: %d", yylineno, token);
-        if(token == 261){
-            printf("=%d\n", yylval);
-        }else{
-            printf("\n");
-        }
+        printf("Line %d Token type: %d\n", yylineno, token);
     }
     
 }
