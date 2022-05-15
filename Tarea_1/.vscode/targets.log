@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'tarea1.y', needed by 'tarea1_parser.cpp'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'tarea1.y', needed by 'tarea1_parser.cpp'.  Sto
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 13 22:44:12 2022
+# Make data base, printed on Sun May 15 16:27:40 2022
 
 # Variables
 
@@ -57,7 +55,7 @@ PATH = /home/leito/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/b
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8fb31f55-b950-4c6e-a1b5-d5be8dff61a2.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-bb33e329-89dc-4ef1-8950-1ffaca7c19ff.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -148,8 +146,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=4/105=4%
+# Load=69/1024=7%, Rehash=0, Collisions=4/109=4%
 
 # Pattern-specific Variable Values
 
@@ -157,9 +157,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 52397): 7 files, no impossibilities.
+# . (device 2064, inode 52397): 15 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -171,14 +171,26 @@ all: tarea1
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 tarea1_parser.o: tarea1_parser.cpp
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-05-13 23:14:39.6334366
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 20):
 	g++ --std=c++11 -g -c -o $@ $<
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
@@ -208,8 +220,11 @@ tarea1_lexer.o: tarea1_lexer.cpp
 
 tarea1: tarea1_parser.o tarea1_lexer.o main.o
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-05-13 23:14:39.8334366
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 5):
 	g++ --std=c++11 -g -o $@ $^
 
@@ -222,8 +237,9 @@ tarea1.l:
 # Not a target:
 tarea1.y:
 #  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-05-14 18:56:02.1295369
+#  File has been updated.
+#  Successfully updated.
 
 clean:
 #  Implicit rule search has not been done.
@@ -238,8 +254,29 @@ clean:
 
 tarea1_parser.cpp: tarea1.y
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-05-13 23:14:39.5934366
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := tarea1_parser.cpp
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := tarea1.y
+# automatic
+# | := 
+# automatic
+# < := tarea1.y
+# automatic
+# ^ := tarea1.y
+# automatic
+# ? := tarea1.y
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+ 
 #  recipe to execute (from 'Makefile', line 17):
 	bison --defines=tokens.h -o $@ $<
 
@@ -258,7 +295,7 @@ tarea1_lexer.cpp: tarea1.l
 	flex -o $@ $<
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/40=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -268,9 +305,9 @@ tarea1_lexer.cpp: tarea1.l
 # strcache buffers: 1 (0) / strings = 21 / storage = 208 B / avg = 9 B
 # current buf: size = 8162 B / used = 208 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 41 / hit rate = 48%
+# strcache performance: lookups = 50 / hit rate = 58%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/41=2%
-# Finished Make data base on Fri May 13 22:44:12 2022
+# Load=21/8192=0%, Rehash=0, Collisions=1/50=2%
+# Finished Make data base on Sun May 15 16:27:40 2022
 
  

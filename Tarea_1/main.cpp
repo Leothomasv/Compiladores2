@@ -17,7 +17,7 @@ int main(int argc, char*argv[]){
     FILE * f = fopen(argv[1], "r");
     if (f == NULL)
     {
-        fprintf(stderr, "Cou");
+        fprintf(stderr, "Couldn't open the file");
     }
 
     yyin = f;
