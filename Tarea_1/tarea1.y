@@ -22,29 +22,35 @@
 
 
 
-external_declaration: statement
-    | exprlist
+external_declaration: definition_block statement_list
+    | statement_list
+    | expr_list
     ;
+statement_list: 
+    |statement_list statement
 
-statement: definition_statement
+statement: 
     | write_statement
+    | assignation_statement
+    ;
+assignation_statement: TK_ID '=' expr_list ';'
+
+write_statement: TK_WRITE '(' expr_list ')' ';'
     ;
 
-write_statement: TK_WRITE '(' exprlist ')' ';'
+definition_block: TK_DEF TK_ID declarations_list TK_END
     ;
 
-definition_statement: TK_DEF TK_ID declarations TK_END
+declarations_list: 
+    |declarations_list declarations
     ;
 
 declarations: declarations
     | TK_ID ':' TK_INT ';'
     ;
 
-
-
-
-exprlist: /*E*/
-    |exprlist expression TK_EOL
+expr_list: /*E*/
+    |expr_list expression TK_EOL
     ;
 
 expression: expression '+' factor
