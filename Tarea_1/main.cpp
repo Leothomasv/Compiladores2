@@ -2,10 +2,10 @@
 
 using namespace std;
 extern FILE * yyin;
-extern  char* yylval;
 extern int yylineno;
 
 int yylex();
+int yyparse();
 
 int main(int argc, char*argv[]){
 
@@ -21,10 +21,8 @@ int main(int argc, char*argv[]){
     }
 
     yyin = f;
-    int token;
-    while ((token = yylex()))
-    {
-        printf("Line %d Token type: %d\n", yylineno, token);
-    }
     
+    yyparse()
+
+    return 0;
 }
