@@ -1,11 +1,18 @@
 def declarations
 x:int;
 y:int;
+z:int;
 end
 
 x = 54;
 y = 65;
+z = 35; 
+
 write(x + y);
 y = x / 5;
+
 write(y);
+
 write(4-3);
+
+write(z + y);

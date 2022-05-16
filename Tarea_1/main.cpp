@@ -22,7 +22,7 @@ int main(int argc, char*argv[]){
 
     yyin = f;
     
-    yyparse()
+    yyparse();
 
     return 0;
 }
