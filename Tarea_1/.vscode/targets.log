@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 15 22:24:33 2022
+# Make data base, printed on Wed May 18 17:03:02 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ PATH = /home/leito/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/b
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-77be6807-b775-4aa9-8ca2-efe328a90c69.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-7d2b4a93-5e5f-4a81-8e8c-5143c8a8c170.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -69,7 +69,7 @@ PWD = /home/leito/Compiladores1_Clase/Tarea_1
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/12_interop
+WSL_INTEROP = /run/WSL/115_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -79,7 +79,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = leito
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -155,9 +155,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 52397): 10 files, no impossibilities.
+# . (device 2064, inode 52397): 8 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -235,7 +235,7 @@ tarea1.l:
 # Not a target:
 tarea1.y:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 22:24:26.0038702
+#  Last modified 2022-05-15 22:35:30.3038702
 #  File has been updated.
 #  Successfully updated.
 
@@ -253,7 +253,7 @@ clean:
 tarea1_parser.cpp: tarea1.y
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  Last modified 2022-05-15 22:22:37.3638702
+#  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -300,12 +300,12 @@ tarea1_lexer.cpp: tarea1.l
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 208 B / avg = 9 B
-# current buf: size = 8162 B / used = 208 B / count = 21 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 199 B / avg = 9 B
+# current buf: size = 8162 B / used = 199 B / count = 20 / avg = 9 B
 
-# strcache performance: lookups = 45 / hit rate = 53%
+# strcache performance: lookups = 43 / hit rate = 53%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/45=2%
-# Finished Make data base on Sun May 15 22:24:33 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/43=2%
+# Finished Make data base on Wed May 18 17:03:02 2022
 
  

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 13 21:27:20 2022
+# Make data base, printed on Tue Jun  7 17:56:17 2022
 
 # Variables
 
@@ -51,11 +51,11 @@ VSCODE_CWD = /mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/leito/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/leoth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/leoth/AppData/Roaming/npm:/mnt/c/Users/leoth/.dotnet/tools:/snap/bin
+PATH = /home/leito/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/leoth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/leoth/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/leoth/AppData/Roaming/npm:/mnt/c/Users/leoth/.dotnet/tools:/snap/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4a407046-0d35-4369-ad67-8e81aa548d57.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-d7e394f3-c41c-4830-af8a-275bf647959f.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -79,7 +79,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = leito
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -103,7 +103,7 @@ NAME = Code
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/leoth/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.2
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/leoth/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
 MAKE_COMMAND := make
 # default
@@ -157,9 +157,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 10638): 9 files, no impossibilities.
+# . (device 2064, inode 10638): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -209,12 +209,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 158 B / avg = 9 B
-# current buf: size = 8162 B / used = 158 B / count = 17 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 166 B / avg = 9 B
+# current buf: size = 8162 B / used = 166 B / count = 18 / avg = 9 B
 
-# strcache performance: lookups = 20 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Fri May 13 21:27:20 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Tue Jun  7 17:56:17 2022
 
  
