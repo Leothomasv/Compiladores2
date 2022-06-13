@@ -20,7 +20,6 @@ DIGIT [0-9]
 "float" { return TK_FLOAT_TYPE; }
 "printf" { return TK_PRINTF; }
 "return" { return TK_RETURN; }
-"continue" { return TK_CONTINUE; }
 {DIGIT}+ { yylval.int_t = atoi(yytext); return TK_LIT_INT;}
 {DIGIT}+"."{DIGIT}+ { yylval.float_t = atof(yytext); return TK_LIT_FLOAT; }
 [a-zA-Z]({DIGIT}|[a-zA-Z_0-9]|_)* { yylval.string_t = strdup(yytext); return TK_ID;}
@@ -51,10 +50,10 @@ DIGIT [0-9]
 "==" { return TK_EQUALS; }
 "!=" { return TK_NOT_EQUAL; }
 "//"[^\n]* {/* nothing */}
-. {printf("Invalid character %c, line %d\n", yytext[0], yylineno);}
+. {printf("Invalid character %c, line %d\n", yytext[0], yylineno); yyterminate();}
 
 <comment>"*/" {BEGIN(INITIAL);}
 <comment>.|\n {/* do nothing */}
-<comment><<EOF>> {printf("incomplete comment, line: %d\n", yylineno);}
+<comment><<EOF>> {printf("incomplete comment, line: %d\n", yylineno); yyterminate();}
 
 %%
