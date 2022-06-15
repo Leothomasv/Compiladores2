@@ -198,7 +198,7 @@ class WhileStatement: public Statement{
         int line;
         int evaluateSemantic();
         string genCode();
-};
+}; 
 
 class PrintStatement: public Statement{
     public:
